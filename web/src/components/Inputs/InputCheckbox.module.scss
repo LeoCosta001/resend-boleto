@@ -1,0 +1,93 @@
+/*************
+* Variáveis *
+*************/
+@import '../../style/variables/layoutColors.scss';
+
+/*******
+* CSS *
+*******/
+.main__input {
+  display: flex;
+  width: fit-content;
+  height: fit-content;
+}
+
+.input {
+  display: none;
+}
+
+.label {
+  user-select: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+
+  // Texto do label
+  & span {
+    color: $LIGHT-LT-Checkbox-Label-Dafault_01;
+    font-size: 1.1em;
+    margin-left: 10px;
+    transition: 0.1s;
+
+    &:hover {
+      color: $LIGHT-LT-Checkbox-Label-Dafault_01--checked;
+    }
+  }
+
+  // Custom Checkbox
+  & .checkbox__box {
+    position: relative;
+    box-sizing: border-box;
+    margin: none;
+    border: solid 2px $LIGHT-BD-Checkbox-Default_01;
+    border-radius: 4px;
+    height: 18px;
+    width: 18px;
+    transition: 0.1s;
+
+    & .checkbox__box__icon:after {
+      content: '';
+      background: transparent;
+      width: 2px;
+      height: 2px;
+      box-shadow: none;
+      position: absolute;
+      left: 1px;
+      top: 6px;
+      transform: rotate(45deg);
+    }
+  }
+}
+
+.checkbox__checked {
+  & .checkbox__box {
+    background-color: $LIGHT-BG-Checkbox-Dafault_01--checked !important;
+    border-color: $LIGHT-BD-Checkbox-Dafault_01--checked !important;
+
+    & .checkbox__box__icon:after {
+      box-shadow: 2px 0 0 $LIGHT-BS-Checkbox-Dafault_01--checked,
+        4px 0 0 $LIGHT-BS-Checkbox-Dafault_01--checked,
+        4px -2px 0 $LIGHT-BS-Checkbox-Dafault_01--checked,
+        4px -4px 0 $LIGHT-BS-Checkbox-Dafault_01--checked,
+        4px -6px 0 $LIGHT-BS-Checkbox-Dafault_01--checked,
+        4px -8px 0 $LIGHT-BS-Checkbox-Dafault_01--checked !important;
+    }
+  }
+}
+
+.checkbox__disabled {
+  & .checkbox__box {
+    background-color: $LIGHT-BG-Checkbox-Dafault_01--disabled !important;
+    border-color: $LIGHT-BD-Checkbox-Dafault_01--disabled !important;
+
+    & .checkbox__box__icon:after {
+      box-shadow: 2px 0 0 transparent, 4px 0 0 transparent,
+        4px -2px 0 transparent, 4px -4px 0 transparent, 4px -6px 0 transparent,
+        4px -8px 0 transparent !important;
+    }
+  }
+
+  & span {
+    color: $LIGHT-LT-Checkbox-Label-Dafault_01--disabled !important;
+  }
+}

@@ -1,0 +1,32 @@
+/*************
+* Variáveis *
+*************/
+@import '../../../style/variables/layoutColors.scss';
+
+/*******
+* CSS *
+*******/
+.main__button {
+  background-color: $LIGHT-BT-Main_01;
+  color: $LIGHT-LT-InsideMain_01;
+  font-size: 1.6em;
+  width: 100%;
+  border-radius: 4px;
+  padding: 10px;
+  transition: 0.1s all;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:hover {
+    background-color: $LIGHT-BT-Main_01--hover;
+  }
+
+  &:active {
+    background-color: $LIGHT-BT-Main_01;
+  }
+
+  &:disabled {
+    background-color: $LIGHT-BT-Main_01--disabled;
+  }
+}

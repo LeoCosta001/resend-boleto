@@ -1,0 +1,19 @@
+/*******
+* CSS *
+*******/
+@media (max-width: 770px) {
+  .main {
+    min-height: max-content;
+  }
+}
+
+@media (max-width: 530px) {
+  .content__container {
+    padding: 25px 25px;
+    min-width: 100%;
+
+    & .content {
+      width: 100%;
+    }
+  }
+}

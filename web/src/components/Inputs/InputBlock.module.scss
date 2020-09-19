@@ -1,0 +1,37 @@
+/*************
+* Variáveis *
+*************/
+@import '../../style/variables/layoutColors.scss';
+
+/*******
+* CSS *
+*******/
+.main__input {
+  display: flex;
+  flex-direction: column;
+}
+
+.label {
+  font-size: 1.4em;
+  margin-bottom: 5px;
+}
+
+.input {
+  background-color: $LIGHT-BG-Main_01;
+  border: solid 1px $LIGHT-BD-Main_02;
+  font-size: 1.2em;
+  letter-spacing: 0.5px;
+  padding: 10px;
+  border-radius: 4px;
+  width: 100%;
+  transition: 0.1s;
+
+  &:hover {
+    border-color: $LIGHT-BD-Main_01;
+  }
+
+  &:focus {
+    background-color: $LIGHT-BD-Main20_01;
+    border-color: $LIGHT-BD-Main_01;
+  }
+}

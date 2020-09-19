@@ -1,0 +1,59 @@
+/*************
+* Variáveis *
+*************/
+@import '../../style/variables/layoutColors.scss';
+
+/*********
+* Mixins *
+**********/
+@import '../../style/mixins/animations.scss';
+
+/*******
+* CSS *
+*******/
+.main {
+  display: flex;
+  min-height: 100vh;
+}
+
+.content__container {
+  padding: 50px 0px;
+  min-width: 520px;
+  min-height: 100%;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  & .content {
+    width: 400px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    & .form {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      & .form__item {
+        width: 100%;
+
+        & ~ .form__item {
+          margin-top: 15px;
+        }
+      }
+
+      & .form__button {
+        width: 100%;
+        margin-top: 20px;
+      }
+    }
+  }
+}
+
+/*************
+* Responsivo *
+**************/
+@import './Responsive.scss';

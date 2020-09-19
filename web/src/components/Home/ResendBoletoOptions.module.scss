@@ -1,0 +1,70 @@
+/*************
+* Variáveis *
+*************/
+@import '../../style/variables/layoutColors.scss';
+
+/*******
+* CSS *
+*******/
+.main {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+
+  & .state__message {
+    font-size: 1.5em;
+    text-align: center;
+    line-height: 1.2em;
+    margin-top: 10px;
+  }
+
+  & .loading__message {
+    color: $LIGHT-LT-Status_OK_01;
+  }
+
+  & .error__message {
+    color: $LIGHT-LT-Status_Error_01;
+  }
+
+  & .warning__message {
+    color: $LIGHT-LT-Status_Warning_01;
+  }
+
+  & .success__message {
+    color: $LIGHT-LT-Status_OK_01;
+  }
+}
+
+.success__content__container {
+  background-color: $LIGHT-BG-Main_01;
+  width: 100%;
+  min-height: 300px;
+  margin: 10px 0px;
+  border: solid 1px $LIGHT-BD-Main_01;
+  border-radius: 8px;
+
+  & .success__content__item {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+
+    & .item__title {
+      font-size: 1.3em;
+      font-weight: bold;
+      color: $LIGHT-LT-Main_01;
+    }
+    & .item {
+      font-size: 1.1em;
+      color: $LIGHT-LT-Default_01;
+      font-weight: bold;
+      margin: 10px 10px 0px 10px;
+    }
+
+    & .item__text {
+      color: $LIGHT-LT-Default_01;
+      margin: 5px 10px 0px 10px;
+    }
+  }
+}

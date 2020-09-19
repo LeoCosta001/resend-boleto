@@ -1,0 +1,46 @@
+/**************
+ * Tema Claro *
+ *************/
+
+// Cores de fundo
+$LIGHT-BG-Default_01: #f8f8f8;
+$LIGHT-BG-Main_01: #f0f3f8;
+
+// Cores de Texto
+$LIGHT-LT-Default_01: #454545;
+$LIGHT-LT-Main_01: #14c8bd;
+$LIGHT-LT-Status_OK_01: #2ecc71;
+$LIGHT-LT-Status_Error_01: #f44237;
+$LIGHT-LT-Status_Warning_01: #f39c12;
+$LIGHT-LT-InsideMain_01: #fff;
+
+// Cores de Textos de Link
+$LIGHT-LT-Link-Default_01: #14c8bd;
+
+// Cores de Bordas
+$LIGHT-BD-Main_01: #14c8bd;
+$LIGHT-BD-Main_02: #7fece5;
+$LIGHT-BD-Main20_01: rgba(20, 200, 188, 0.2);
+
+// Fundo de Botões
+$LIGHT-BT-Default_01: #d5d5d5;
+$LIGHT-BT-Main_01: #14c8bd;
+$LIGHT-BT-Main_01--hover: #38e4d8;
+$LIGHT-BT-Main_01--disabled: #aaa;
+
+/*
+* Componentes
+*/
+
+// Checkbox padrão (Custom style)
+$LIGHT-BD-Checkbox-Default_01: #14c8bd;
+$LIGHT-BD-Checkbox-Dafault_01--checked: #14c8bd;
+$LIGHT-BD-Checkbox-Dafault_01--disabled: $LIGHT-BT-Main_01--disabled;
+$LIGHT-BG-Checkbox-Dafault_01: #f0f3f8;
+$LIGHT-BG-Checkbox-Dafault_01--checked: #14c8bd;
+$LIGHT-BG-Checkbox-Dafault_01--disabled: $LIGHT-BT-Main_01--disabled;
+$LIGHT-BS-Checkbox-Dafault_01--checked: #fff;
+$LIGHT-BS-Checkbox-Dafault_01--disabled: #fff;
+$LIGHT-LT-Checkbox-Label-Dafault_01: $LIGHT-LT-Default_01;
+$LIGHT-LT-Checkbox-Label-Dafault_01--checked: $LIGHT-LT-Link-Default_01;
+$LIGHT-LT-Checkbox-Label-Dafault_01--disabled: $LIGHT-BD-Checkbox-Dafault_01--disabled;

@@ -32,7 +32,7 @@
 
 - **Outras Libs/APIs:** Pagarme.
 
-- **Pré-processador:** SASS.
+- **Pré-processador:** SCSS.
 
 ## Como rodar
 
